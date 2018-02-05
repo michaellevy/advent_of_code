@@ -14,4 +14,6 @@ step_it <- function(steps) {
   }
   return(steps_taken)
 }
-step_it(c(0, 3, 0, 1, -3))
+read_lines("inputs/q5.txt") %>%
+  as.integer() %>%
+  step_it()
